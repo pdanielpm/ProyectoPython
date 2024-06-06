@@ -1,7 +1,7 @@
 # Paquete dna_analysis
 
 ## Descripción
-Este paqueño paquete de Python, dna_analysis, proporciona dos  herramientas para el análisis de secuencias de ADN.
+Este pequeño paquete de Python, dna_analysis, proporciona dos  herramientas para el análisis de secuencias de ADN.
 
 ## Funcionalidades
 
@@ -17,43 +17,42 @@ Este módulo traduce una secuencia de ADN en una secuencia de aminoácidos utili
 
 ## Estructura del proyecto
 ```
-ProyectoPyhton/
+ProyectoPython/
 │
-├── __init__.py
-│
-├── utils/
-│   ├── __init__.py
-│   ├── file_io.py
-│   ├── validators.py
-│   └── amino_acid_validators.py  # Nuevo archivo para validar secuencias de aminoácidos
-│
-├── operations/
-│   ├── __init__.py
-│   ├── codon_frequency.py
-│   └── translation.py  # Módulo para traducir secuencias de ADN a aminoácidos
-│
-├── scripts/
-│   ├── __init__.py
-│   └── main.py
-│
-├── tests/
-│   ├── __init__.py
-│   ├── test_utils/
-│   │   ├── __init__.py
-│   │   ├── test_file_io.py
-│   │   ├── test_validators.py
-│   │   └── test_amino_acid_validators.py  # Pruebas para el validador de secuencias de aminoácidos
-│   ├── test_operations/
-│   │   ├── __init__.py
-│   │   ├── test_codon_frequency.py
-│   │   └── test_translation.py  # Pruebas para la traducción de secuencias de ADN a aminoácidos
-│   └── test_scripts/
-│       ├── __init__.py
-│       └──  main.py
-└── docs/
-  ├── user_manual.md
-  ├── api_reference.md
-  └── developer_guide.md
+└── dna_analysis/
+    │
+    ├── __init__.py
+    │
+    ├── utils/
+    │   ├── __init__.py
+    │   ├── file_io.py
+    │   ├── validators.py
+    │   └── amino_acid_validators.py
+    │
+    ├── operations/
+    │   ├── __init__.py
+    │   ├── codon_frequency.py
+    │   └── translation.py
+    │
+    ├── scripts/
+    │   ├── __init__.py
+    │   └── main.py
+    │
+    └── tests/
+        ├── __init__.py
+        ├── test_utils/
+        │   ├── __init__.py
+        │   ├── test_file_io.py
+        │   ├── test_validators.py
+        │   └── test_amino_acid_validators.py
+        ├── test_operations/
+        │   ├── __init__.py
+        │   ├── test_codon_frequency.py
+        │   └── test_translation.py
+        └── test_scripts/
+            ├── __init__.py
+            └──  test_main.py
+
 ```
 ## Contribuyentes
 Este paquete fue desarrollado por Palafox Collado Dara Jazheel y Pineda Martinez Pedro Daniel.
