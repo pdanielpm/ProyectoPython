@@ -20,8 +20,3 @@ def translate_all_frames(archivo_entrada):
     except FileNotFoundError:
         print(f"Error: Archivo '{archivo_entrada}' no encontrado.")
 
-if __name__ == "__main__":
-    archivo_entrada = input("Ingresa la ruta al archivo FASTA de entrada: ")
-    translate_all_frames(archivo_entrada)
-
-
