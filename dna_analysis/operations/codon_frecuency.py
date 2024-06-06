@@ -50,16 +50,19 @@ from collections import defaultdict
 # =                            functions
 # ===========================================================================
 
-# Esta función lee una secuencia de ADN desde un archivo de texto.
 
-
-def leer_secuencia(file_path):
+# Función para extraer la secuencia de un archivo FASTA
+def extraer_secuencia_fasta(file_path):
     with open(file_path, 'r') as file:
-        return file.read().strip().replace('\n', '')
+        lines = file.readlines()
+        sequence = ''
+        for line in lines:
+            if line.startswith('>'):  # Ignorar líneas de descripción
+                continue
+            sequence += line.strip()
+        return sequence
 
-# Esta función cuenta la frecuencia de cada codón en la secuencia de ADN.
-
-
+# Función para contar la frecuencia de cada codón en la secuencia de ADN
 def contar_codones(secuencia):
     codones = defaultdict(int)
     total_codones = 0
@@ -72,37 +75,7 @@ def contar_codones(secuencia):
 
     return codones, total_codones
 
-# Esta función calcula la frecuencia de cada codón.
-
-
+# Función para calcular la frecuencia de cada codón
 def calcular_frecuencias(codones, total_codones):
-    frecuencias = {codon: count /
-                   total_codones for codon, count in codones.items()}
+    frecuencias = {codon: count / total_codones for codon, count in codones.items()}
     return frecuencias
-
-# ===========================================================================
-# =                            main
-# ===========================================================================
-
-
-def main():
-    # Parsear argumentos de línea de comandos
-    parser = argparse.ArgumentParser(
-        description="Calcular la frecuencia de codones en una secuencia de ADN.")
-    parser.add_argument(
-        "file", help="Archivo que contiene la secuencia de ADN.")
-
-    args = parser.parse_args()
-
-    secuencia = leer_secuencia(args.file)
-    codones, total_codones = contar_codones(secuencia)
-    frecuencias = calcular_frecuencias(codones, total_codones)
-
-    # Imprimir la frecuencia de cada codón
-    for codon, freq in frecuencias.items():
-        print(f"Codón: {codon}, Frecuencia: {freq:.4f}")
-
-
-# Llamar a la función main
-if __name__ == "__main__":
-    main()
