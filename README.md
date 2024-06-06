@@ -49,8 +49,7 @@ dna_analysis/
 │   │   └── test_translation.py  # Pruebas para la traducción de secuencias de ADN a aminoácidos
 │   └── test_scripts/
 │       ├── __init__.py
-│       ├── test_calculate_codon_frequency.py
-│       └── test_translate_dna.py  # Pruebas para el script de traducción de secuencias de ADN
+│       └──  main.py
 └── docs/
   ├── user_manual.md
   ├── api_reference.md
