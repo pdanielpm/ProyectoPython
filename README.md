@@ -17,7 +17,7 @@ Este módulo traduce una secuencia de ADN en una secuencia de aminoácidos utili
 
 ## Estructura del proyecto
 ```
-dna_analysis/
+ProyectoPyhton/
 │
 ├── __init__.py
 │
@@ -56,7 +56,7 @@ dna_analysis/
   └── developer_guide.md
 ```
 ## Contribuyentes
-Este paquete fue desarrollado por Palafox Collaodo Dara Jazheel y Pineda Martinez Pedro Daniel.
+Este paquete fue desarrollado por Palafox Collado Dara Jazheel y Pineda Martinez Pedro Daniel.
 
 ## Terminos de uso
 Este paquete está disponible bajo la Licencia Apache. Consulta el archivo LICENSE para obtener más detalles.
