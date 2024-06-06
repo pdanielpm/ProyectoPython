@@ -1,3 +1,5 @@
+import sys 
+sys.path.append("C:/Users/pdmpe/Desktop/ProyectoPython/dna_analysis/")
 from dna_analysis.operations.translate_dna import translate_all_frames
 
 if __name__ == "__main__":
