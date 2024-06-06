@@ -1,7 +1,7 @@
 # Paquete dna_analysis
 
 ## Descripción
-Este paqueño paquete de Python, dna_analysis, proporciona dos  herramientas para el análisis de secuencias de ADN.
+Este pequeño paquete de Python, dna_analysis, proporciona dos  herramientas para el análisis de secuencias de ADN.
 
 ## Funcionalidades
 
