@@ -13,7 +13,7 @@ Este módulo analiza la frecuencia de codones en una secuencia de ADN.
 Este módulo traduce una secuencia de ADN en una secuencia de aminoácidos utilizando la tabla de código genético estándar.
 
 ## Uso
-El paquete dna_analysis se puede utilizar desde la línea de comandos o importarse como una biblioteca en un script Python. **Aun no se si dejar esto**
+-----pendiente---
 
 ## Estructura del proyecto
 ```
