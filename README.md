@@ -13,7 +13,7 @@ Este módulo analiza la frecuencia de codones en una secuencia de ADN.
 Este módulo traduce una secuencia de ADN en una secuencia de aminoácidos utilizando la tabla de código genético estándar.
 
 ## Uso
------pendiente---
+
 
 ## Estructura del proyecto
 ```
