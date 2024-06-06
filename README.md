@@ -27,7 +27,6 @@ ProyectoPython/
     │   ├── __init__.py
     │   ├── file_io.py
     │   ├── validators.py
-    │   └── amino_acid_validators.py
     │
     ├── operations/
     │   ├── __init__.py
@@ -43,8 +42,7 @@ ProyectoPython/
         ├── test_utils/
         │   ├── __init__.py
         │   ├── test_file_io.py
-        │   ├── test_validators.py
-        │   └── test_amino_acid_validators.py
+        │   └── test_validators.py
         ├── test_operations/
         │   ├── __init__.py
         │   ├── test_codon_frequency.py
