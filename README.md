@@ -53,9 +53,10 @@ dna_analysis/
 │       ├── test_calculate_codon_frequency.py
 │       └── test_translate_dna.py  # Pruebas para el script de traducción de secuencias de ADN
 └── docs/
-    ├── user_manual.md
-    ├── api_reference.md
-    └── developer_guide.md
+| ├── user_manual.md
+|    ├── api_reference.md
+|    └── developer_guide.md
+└── main.py
 ```
 ## Contribuyentes
 Este paquete fue desarrollado por Palafox Collaodo Dara Jazheel y Pineda Martinez Pedro Daniel.
