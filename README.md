@@ -54,7 +54,7 @@ dna_analysis/
 └── docs/
   ├── user_manual.md
   ├── api_reference.md
-   └── developer_guide.md
+└── developer_guide.md
 ```
 ## Contribuyentes
 Este paquete fue desarrollado por Palafox Collaodo Dara Jazheel y Pineda Martinez Pedro Daniel.
