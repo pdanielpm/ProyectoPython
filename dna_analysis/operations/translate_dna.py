@@ -1,17 +1,16 @@
 from Bio.Seq import Seq
 from Bio import SeqIO
 
-
 def translate_frames(dna_sequence):
+    """Traduce la secuencia de ADN en los seis marcos de lectura posibles."""
     frames = {}
     for i in range(3):
         frames[f"Frame {i+1} (5' to 3')"] = str(dna_sequence[i:].translate())
-        frames[f"Frame {
-            i+4} (3' to 5')"] = str(dna_sequence.reverse_complement()[i:].translate())
+        frames[f"Frame {i+4} (3' to 5')"] = str(dna_sequence.reverse_complement()[i:].translate())
     return frames
 
-
 def translate_all_frames(archivo_entrada):
+    """Traduce todas las secuencias de un archivo FASTA en los seis marcos de lectura posibles."""
     try:
         for registro in SeqIO.parse(archivo_entrada, "fasta"):
             dna_sequence = registro.seq
